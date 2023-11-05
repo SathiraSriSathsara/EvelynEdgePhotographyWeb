@@ -6,6 +6,7 @@
 	?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="hjFWhy_jSXI8MdqH2_qm83PeDv543j-t9iOO7Y6Tttc" />
     <title><?php echo $siteTittle ?> - Professional Photography and Videography Services For All Kind Of Events.</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1FZGKGNF5"></script>
