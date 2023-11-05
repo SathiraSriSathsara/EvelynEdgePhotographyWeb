@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Create Album</title>
+    <title>User Login</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -11,23 +11,19 @@
         <div class="col-md-6 mt-5">
             <div class="card">
                 <div class="card-header text-center">
-                    Create Album
+                    User Login
                 </div>
                 <div class="card-body">
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="" method="post">
                         <div class="form-group">
-                            <label for="thumbnail">Thumbnail Image</label>
-                            <input type="file" class="form-control" id="thumbnail" name="thumbnail" required>
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
                         </div>
                         <div class="form-group">
-                            <label for="albumName">Album Name</label>
-                            <input type="text" class="form-control" id="albumName" name="albumName" required>
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
                         </div>
-                        <div class="form-group">
-                            <label for="albumType">Album Type</label>
-                            <input type="text" class="form-control" id="albumType" name="albumType" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary" name="createAlbum">Create Album</button>
+                        <button type="submit" class="btn btn-primary btn-block" name="login">Login</button>
                     </form>
                 </div>
             </div>
@@ -36,48 +32,20 @@
 </div>
 
 <?php
-if (isset($_POST['createAlbum'])) {
-    $albumName = $_POST['albumName'];
-    $albumType = $_POST['albumType'];
-    
-    // Create a folder with the albumName
-    $folderPath = __DIR__ . '/' . $albumName;
-    if (!is_dir($folderPath)) {
-        mkdir($folderPath);
+// Hardcoded username and password
+$correct_username = "user";
+$correct_password = "password";
 
-        // Handle file upload for the thumbnail image
-        if (isset($_FILES['thumbnail'])) {
-            $thumbnail = $_FILES['thumbnail'];
-            $thumbnailPath = $folderPath . '/' . $thumbnail['name'];
-            if (move_uploaded_file($thumbnail['tmp_name'], $thumbnailPath)) {
-                // Create a PHP file with albumName.ph
-                $phpCode = <<<EOT
-<div class="col-sm-6 col-lg-3">
-    <div class="blog-item-masonry">
-	    <div class="slider-img"> <a href="<?php echo \$albumPath ?>"> 
-            <img src="<?php echo \$thumbnailPath ?>" class="img-fluid" alt="" > </a>
-        </div>
-		<div class="slider-caption">
-		    <h2><a href="<?php echo \$albumPath ?>"><?php echo \$albumName ?></a></h2>
-			<ul class="portfolio-categ">
-				<li><?php echo \$albumType ?></li>
-			</ul>
-		</div>
-	</div>
-</div>
-EOT;
+if (isset($_POST['login'])) {
+    $entered_username = $_POST['username'];
+    $entered_password = $_POST['password'];
 
-                file_put_contents($folderPath . '/' . $albumName . '.php', $phpCode);
-        
-                echo '<div class="alert alert-success text-center mt-3">Album created successfully!</div>';
-            } else {
-                echo '<div class="alert alert-danger text-center mt-3">Error uploading the thumbnail image.</div>';
-            }
-        } else {
-            echo '<div class="alert alert-danger text-center mt-3">Thumbnail image not provided.</div>';
-        }
+    if ($entered_username === $correct_username && $entered_password === $correct_password) {
+        echo '<div class="alert alert-success text-center mt-3">Login successful!</div>';
+        header("Location: create_album.php");
+        exit();
     } else {
-        echo '<div class="alert alert-danger text-center mt-3">Album already exists. Please choose a different name.</div>';
+        echo '<div class="alert alert-danger text-center mt-3">Invalid username or password. Please try again.</div>';
     }
 }
 ?>
