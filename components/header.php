@@ -19,7 +19,7 @@
 			</div>
 			<div class="menu-contact">
 				<ul class="mobile-contact">
-					<li class="mobile-email"><a href = "mailto: dilanshaminda786@gmail.com" class="__cf_email__">dilanphotography.lk@gmail.com</a></li>
+					<li class="mobile-email"><a href = "mailto: evelynedgephotography@gmail.com" class="__cf_email__">evelynedgephotography@gmail.com</a></li>
 					<li class="mobile-phone">+94 76 607 5813</li>
 				</ul>
 				<ul class="social-media">
