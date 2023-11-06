@@ -41,7 +41,7 @@ if (isset($_POST['createAlbum'])) {
     $albumType = $_POST['albumType'];
     
     // Create a folder with the albumName
-    $folderPath = __DIR__ . '/' . $albumName;
+    $folderPath = __DIR__ . './files' . $albumName;
     if (!is_dir($folderPath)) {
         mkdir($folderPath);
 
