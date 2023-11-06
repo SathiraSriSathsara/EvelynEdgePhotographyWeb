@@ -5,9 +5,8 @@
 		justify-content: center;
 		align-items: center;
 	}
-	iframe{
-		width: 1315px;
-		height: 2000px;
+	a:hover{
+		color: #000;
 	}
 </style>
 <body>
@@ -32,11 +31,7 @@
 			</div>
 			<!-- /row -->
 		</div>
-
-		<div class="packages">
-			<iframe src="./components/packages.html" frameborder="0" allowfullscreen></iframe>
-		</div>
-
+			<?php include './components/packages.html';?>
     		<!-- /container -->
 		<!-- /SECTION 2-->
 		<br>

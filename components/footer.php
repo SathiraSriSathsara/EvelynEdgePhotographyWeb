@@ -1,7 +1,7 @@
 <footer>
 			<div class="container">
 				<div class="copyright">
-					<div class="footer-copy"> Copyright &copy; 2021 - 2023, EvelynEdge Photography.</div>
+					<div class="footer-copy"> Copyright &copy; 2021 - 2023, <?php echo $siteTittle ?> Photography.</div>
 				</div>
 			</div>
 		</footer>

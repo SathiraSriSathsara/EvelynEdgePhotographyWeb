@@ -19,7 +19,7 @@
 						<h5 class="widgettitle widget-left margin-b24">Phone</h5>
 						<p>+94 76 607 5813</p>
 						<h5 class="widgettitle widget-left margin-b24">Email</h5>
-						<p><a href = "mailto: dilanshaminda786@gmail.com" class="__cf_email__">dilanphotography.lk@gmail.com</a></p>
+						<p><a href = "mailto: evelynedgephotography@gmail.com" class="__cf_email__">evelynedgephotography@gmail.com</a></p>
 				</div>
 				<div class="col-lg-6">
 				<h3 class="margin-b24">Get in Touch</h3>
