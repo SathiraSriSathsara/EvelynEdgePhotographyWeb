@@ -1,12 +1,4 @@
 <!-- /PAGE INTRO -->
-<div class="topSingleBkg topPageBkg">
-	<div class="container">
-		<div class="inner-desc">
-			<h1 class="post-title single-post-title">Portfolio</h1>
-		</div>
-	</div>
-</div>
-<!-- /PAGE INTRO -->
 <div id="wrap-content" class="page-content">
 	<div class="container">
 		<div class="row portfolio-items">

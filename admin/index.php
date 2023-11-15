@@ -1,54 +1,29 @@
+<?php
+include './functions.php';
+?> 
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>User Login</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="./css/login.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6 mt-5">
-            <div class="card">
-                <div class="card-header text-center">
-                    User Login
-                </div>
-                <div class="card-body">
-                    <form action="" method="post">
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block" name="login">Login</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<?php
-// Hardcoded username and password
-$correct_username = "user";
-$correct_password = "password";
-
-if (isset($_POST['login'])) {
-    $entered_username = $_POST['username'];
-    $entered_password = $_POST['password'];
-
-    if ($entered_username === $correct_username && $entered_password === $correct_password) {
-        echo '<div class="alert alert-success text-center mt-3">Login successful!</div>';
-        header("Location: create_album.php");
-        exit();
-    } else {
-        echo '<div class="alert alert-danger text-center mt-3">Invalid username or password. Please try again.</div>';
-    }
-}
-?>
-
+  <div class="container">
+    <h1>Welcome To <?php getName() ?> Admin Panel</h1>
+    <p>Ready to login?</p>
+    <form action="login.php" method="POST">
+      <center>
+      <div class="form-group">
+        <input placeholder="User Name" type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" name="password" required>
+      </div>
+        <input class="login-bt" type="submit" value="Login to panel">
+      </center>
+    </form>
+  </div>
 </body>
 </html>

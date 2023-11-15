@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    background: #102235;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 145px;
+    padding: 20px;
+    background: #151c2b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+  
+.form-group {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    background: #293349;
+    display: block;
+    border: 0px;
+    border-radius: 5px;
+}
+  
+h1{
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+p{
+  color: #969292;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 100%;
+}
+
+.login-bt{
+    background-color: #0f62fe;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120PX;
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    background: #102235;
+}
+
+.wrapper .sidebar{
+    background: #151c2b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .sidebar .title{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper .sidebar .title h3{
+  color: #ffffff;
+  margin: 100px 0 5px;
+  margin-left: 13px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #151c2b;
+  color: rgb(241, 237, 237);
+  font-size: 13px;
+  position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #ffffff;
+
+    background: #18212f;
+    border-left: 5px solid #0ea5e9;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #ffffff;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #151c2b;
+  position: fixed;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.nav-title {
+  display: inline-block;
+  padding: 13px 10px 10px 40px;
+  font-size: 22px;
+  color: #d0d2d5;
+  font-weight: 550;
+}
+
+.dot{
+  color: #0ea5e9;
+}
+
+.nav-links {
+  float: right;
+  padding: 10px;
+}
+
+.nav-li{
+  font-size: 15px;
+  padding: 10px;
+  color: #fff;
+}
+
+.profile{
+  margin-left: 10px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+.credit {
+  padding: 10px;
+  margin-top: 250px;
+  text-align: center;
+  font-size: 11px;
+  color: #8fa4b9ad;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container{
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 400px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+}
+
