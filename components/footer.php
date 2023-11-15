@@ -12,15 +12,15 @@
 			</a>
 		</div>
 		<!-- JS --> 
-		<script data-cfasync="false" src="https://dilanphotography.lk/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://dilanphotography.lk/assets/js/jquery.js'></script>
-		<script src='https://dilanphotography.lk/assets/js/jquery-migrate.min.js'></script>
-		<script src='https://dilanphotography.lk/assets/css/bootstrap/js/popper.min.js'></script>
-		<script src='https://dilanphotography.lk/assets/css/bootstrap/js/bootstrap.min.js'></script>
-		<script src='https://dilanphotography.lk/assets/js/jquery.easing.min.js'></script>
-		<script src='https://dilanphotography.lk/assets/js/jquery.fitvids.js'></script>
-		<script src='https://dilanphotography.lk/assets/js/owl-carousel/owl.carousel.min.js'></script>
-		<script src='https://dilanphotography.lk/assets/js/isotope.pkgd.min.js'></script>
-		<script src='https://dilanphotography.lk/assets/js/simple-lightbox.min.js'></script>
+		<script data-cfasync="false" src="https://evelynedge.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://evelynedge.com/assets/js/jquery.js'></script>
+		<script src='https://evelynedge.com/assets/js/jquery-migrate.min.js'></script>
+		<script src='https://evelynedge.com/assets/css/bootstrap/js/popper.min.js'></script>
+		<script src='https://evelynedge.com/assets/css/bootstrap/js/bootstrap.min.js'></script>
+		<script src='https://evelynedge.com/assets/js/jquery.easing.min.js'></script>
+		<script src='https://evelynedge.com/assets/js/jquery.fitvids.js'></script>
+		<script src='https://evelynedge.com/assets/js/owl-carousel/owl.carousel.min.js'></script>
+		<script src='https://evelynedge.com/assets/js/isotope.pkgd.min.js'></script>
+		<script src='https://evelynedge.com/assets/js/simple-lightbox.min.js'></script>
 		<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 		<!-- MAIN JS -->
-		<script src='https://dilanphotography.lk/assets/js/init.js'></script>
+		<script src='https://evelynedge.com/assets/js/init.js'></script>
